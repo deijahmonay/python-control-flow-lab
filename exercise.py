@@ -81,7 +81,7 @@ def check_voting_eligibility():
     if user_age >= voting_age:
         print("You are eligible to vote!")
     else:
-        print("You're unable to vote")
+        print("You're not old enough to vote yet but.. YOUR TIME IS COMING!")
 
 # # Call the function
 check_voting_eligibility()
