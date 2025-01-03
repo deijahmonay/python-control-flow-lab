@@ -50,7 +50,7 @@ def check_letter():
     # Your control flow logic goes here
 
 # Call the function
-check_letter()
+# check_letter()
 
 
 # Exercise 2: Old enough to vote?
@@ -69,9 +69,20 @@ check_letter()
 # - Use `int()` to convert the input to an integer. Ensure to handle any conversion errors gracefully.
 # - Use a conditional statement to check if the age meets the minimum voting age requirement.
 
-# def check_voting_eligibility():
+def check_voting_eligibility():
+    voting_age = 18
+    user_age = int(input("Please enter your age: "))
 #     # Your control flow logic goes here
 
+    if user_age < 0:
+        print('Invalid entry. Please enter a valid age')
+        return
+
+    if user_age >= voting_age:
+        print("You are eligible to vote!")
+    else:
+        print("You're unable to vote")
+
 # # Call the function
-# check_voting_eligibility()
+check_voting_eligibility()
 
